@@ -25,7 +25,7 @@ The term crowdfunding refers to the mechanism of funding a project or a loan (bu
 https://www.youtube.com/watch?v=tfCA8kAh128
 
 ## Website in Testnet
-- http://184.73.19.253:3000/ 
+- http://3.95.192.155:3000/ 
 
 ## Roadmap:
 - Run local
