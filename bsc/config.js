@@ -2,6 +2,6 @@ const dotenv = require('dotenv').config();
 
 module.exports = {
   NODE_ENV: process.env.NODE_ENV || 'development',
-  PRIVATE_KEY: process.env.PRIVATE_KEY || '967955c8766e07c54fb1b741503b96e863b77450bb937adb3ec27dc5ae07e9f0',
+  PRIVATE_KEY: process.env.PRIVATE_KEY || 'acaa295b538fd0f1d7d5f2be510a5bc5d24ba35fc826774bfcc4fc9b448588e6',
   HOST: process.env.HOST || 'http://localhost:7545',
 }

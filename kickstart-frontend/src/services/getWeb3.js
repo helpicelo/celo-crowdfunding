@@ -1,6 +1,6 @@
 import Web3 from 'web3';
 
-const NET_ID_BSC_TESTNET = 97;
+const NET_ID_CELO_TESTNET = 44787;
 
 const getWeb3 = () => {
   
@@ -12,9 +12,9 @@ const getWeb3 = () => {
 
         const netId = await web.eth.net.getId();
         console.log('Net id ', netId)
-        if (netId !== NET_ID_BSC_TESTNET){
-          // Is connect to binance testnet
-          alert('Change your wallet to BSC Testnet')
+        if (netId !== NET_ID_CELO_TESTNET){
+          // Is connect to celo testnet
+          alert('Change your wallet to CELO Testnet')
           reject(null);
           return;
         }
