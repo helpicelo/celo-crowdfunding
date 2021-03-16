@@ -1,13 +1,29 @@
 import React, { Component } from 'react';
-import Header from "../containers/Header";
 import Share from './Share';
 import ReactPlayer from "react-player";
+
+// Core UI Changes
+import Header from "./ui/Header/Header";
+import HeaderLinks from "./ui/Header/HeaderLinks"
+
+const dashboardRoutes = [];
 
 class StartPage extends Component {
   render(){
     return (
       <div className="start-page">
-        <Header></Header>
+        <Header
+          color="dark"
+          routes={dashboardRoutes}
+          brand="Material Kit React"
+          rightLinks={<HeaderLinks />}
+          fixed
+          changeColorOnScroll={{
+            height: 400,
+            color: "white"
+          }}
+          // {...rest}
+        />
         <div style={{ paddingTop: 20}}>
           <div className='player-wrapper' style={{ margin: '0 auto'}}>
             {/* <ReactPlayer
