@@ -48,11 +48,9 @@ const getWeb3 = () => {
 
         const netId = await web.eth.net.getId();
         console.log('Net id ', netId)
-        // alert(netId)
-
         if (netId !== NET_ID_CELO_TESTNET){
-          // Is connect to binance testnet
-          alert('Change your wallet to Celo Alfajores Testnet')
+          // Is connect to celo testnet
+          alert('Change your wallet to CELO Testnet')
           reject(null);
           return;
         }
