@@ -13,9 +13,9 @@ class StartPage extends Component {
     return (
       <div className="start-page">
         <Header
-          color="dark"
+          color="transparent"
           routes={dashboardRoutes}
-          brand="Material Kit React"
+          brand="helpi"
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{

@@ -61,13 +61,7 @@ export default function HeaderLinks(props) {
       </ListItem>
 
       <ListItem className={classes.listItem}>
-        <Button
-          color="primary"
-          className={classes.navLink}
-        >
-          <ConnectLink />
-        </Button>
-        
+        <Button color="primary" round><ConnectLink /></Button>
       </ListItem>
     </List>
   );
