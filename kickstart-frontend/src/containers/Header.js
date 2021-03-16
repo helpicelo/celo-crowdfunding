@@ -3,14 +3,14 @@ import {Link} from "react-router-dom";
 import ConnectLink from '../components/ConnectLink';
 import {connect} from "react-redux";
 import "../Home.css";
-import logo from '../images/logo-icon-bactria.png' 
+import logo from '../images/logo-icon-helpi.png' 
 
 class Header extends Component{
   render(){
         return <div className="header">
             <div className="logo-nav">
                 <Link to="/">
-                  <img width={200} src={logo} />
+                  <img width={100} src={logo} />
                 </Link>
             </div>
             {(this.props.account !== 0 && this.props.account !== undefined) &&
