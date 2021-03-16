@@ -10,12 +10,12 @@ class StartPage extends Component {
         <Header></Header>
         <div style={{ paddingTop: 20}}>
           <div className='player-wrapper' style={{ margin: '0 auto'}}>
-            <ReactPlayer
+            {/* <ReactPlayer
               className='react-player'
               url="https://www.youtube.com/watch?v=4CpDkyBAcE4"
               width='100%'
               height='100%'
-            />
+            /> */}
           </div>
         </div>
 

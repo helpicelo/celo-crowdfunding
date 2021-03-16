@@ -6,6 +6,8 @@ export function loadAccounts(){
       
       const web3Instance = await getWeb3();
 
+      console.log('Devuelve: ', web3Instance);
+
       if (web3Instance === null  || web3Instance.eth === null) {
         alert('Not access to wallet')
         return
