@@ -1,11 +1,28 @@
 import React, { Component } from 'react';
-import Header from "../containers/Header";
+// import Header from "../containers/Header";
+
+// Core UI Changes
+import Header from "./ui/Header/Header";
+import HeaderLinks from "./ui/Header/HeaderLinks"
+
+const dashboardRoutes = [];
 
 class AboutUs extends Component {
   render(){
     return(
       <div className="panel-about-us">
-        <Header></Header>
+        <Header
+          color="transparent"
+          routes={dashboardRoutes}
+          brand="helpi"
+          rightLinks={<HeaderLinks />}
+          fixed
+          changeColorOnScroll={{
+            height: 400,
+            color: "white"
+          }}
+          // {...rest}
+        />
         <div className="container-text">
           <h3 className="title" style={{fontSize: 30, color: "#fff"}}>About Us</h3>
           <p style={{color:"#fff"}}>Originating from cryptocurrencies, blockchain technologies offer access to an innite range of applications benefitting to sharing economies. The aim of DeBactria is to offer a solution that addresses the inefficiencies of the crowdfunding market and addresses them by combining smart contracts with smart property (via projects) in a trustless decentralized application build on Binance Smart Chain.</p> 

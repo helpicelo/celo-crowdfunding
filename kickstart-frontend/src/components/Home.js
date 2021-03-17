@@ -1,8 +1,14 @@
 import React,{Component} from 'react';
-import Header from "../containers/Header";
+// import Header from "../containers/Header";
 import "../Home.css";
 import {connect} from "react-redux";
 import {Link} from "react-router-dom";
+
+// Core UI Changes
+import Header from "./ui/Header/Header";
+import HeaderLinks from "./ui/Header/HeaderLinks"
+
+const dashboardRoutes = [];
 
 class Home extends Component{
 
@@ -15,7 +21,18 @@ class Home extends Component{
 
     render(){
         return <div className="home">
-            <Header></Header>
+            <Header
+                color="transparent"
+                routes={dashboardRoutes}
+                brand="helpi"
+                rightLinks={<HeaderLinks />}
+                fixed
+                changeColorOnScroll={{
+                    height: 400,
+                    color: "white"
+                }}
+                // {...rest}
+            />
             <h2>Open Campaigns</h2>
             <div className="main-body">
                 <div className="main-body-left">

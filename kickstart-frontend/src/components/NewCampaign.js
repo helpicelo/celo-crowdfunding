@@ -1,11 +1,17 @@
 import React,{Component} from "react";
-import Header from "../containers/Header";
+// import Header from "../containers/Header";
 import factory from "../services/campaignfactory";
 import {connect} from "react-redux";
 import {deployedCampaigns} from "../store/actions/deployedCampaigns";
 import {loadAccounts} from "../store/actions/loadAccounts";
 import CampaignIcon from "../images/up-rocket.png";
 import "../Home.css";
+
+// Core UI Changes
+import Header from "./ui/Header/Header";
+import HeaderLinks from "./ui/Header/HeaderLinks"
+
+const dashboardRoutes = [];
 
 class NewCampaign extends Component{
     constructor(props){
@@ -92,7 +98,18 @@ class NewCampaign extends Component{
 
     render(){
         return <div className="new-campaign-page">
-            <Header></Header>
+            <Header
+                color="transparent"
+                routes={dashboardRoutes}
+                brand="helpi"
+                rightLinks={<HeaderLinks />}
+                fixed
+                changeColorOnScroll={{
+                    height: 400,
+                    color: "white"
+                }}
+                // {...rest}
+            />
             <h2>Create a Campaign</h2>
             <div className="panel-show-form-image">
               <form onSubmit={this.handleFormSubmit} style={{width: '50%'}}>
