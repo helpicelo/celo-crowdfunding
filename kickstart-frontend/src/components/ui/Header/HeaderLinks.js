@@ -20,12 +20,13 @@ import Button from "../CustomButtons/Button.js";
 
 import styles from "../jss/material-kit-react/components/headerLinksStyle";
 
+import {connect} from "react-redux";
 import ConnectLink from '../../ConnectLink';
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
 
-export default function HeaderLinks(props) {
+function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
@@ -66,3 +67,12 @@ export default function HeaderLinks(props) {
     </List>
   );
 }
+
+function mapStateToProps(state) {
+  const statusAccount = {
+    account: state.loadAccounts.account,
+  }
+  return statusAccount;
+}
+
+export default connect(mapStateToProps, null)(HeaderLinks);
