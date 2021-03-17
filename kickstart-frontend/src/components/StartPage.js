@@ -1,3 +1,4 @@
+// Original Imports
 import React, { Component } from 'react';
 import Share from './Share';
 import ReactPlayer from "react-player";
@@ -8,7 +9,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Header from "./ui/Header/Header";
 import HeaderLinks from "./ui/Header/HeaderLinks"
 import Parallax from "./ui/Parallax/Parallax.js";
-import styles from "./ui/jss/material-kit-react/views/landingPage";
+import styles from "./ui/jss/material-kit-react/views/landingPage.js";
 import GridContainer from "./ui/Grid/GridContainer.js";
 import GridItem from "./ui/Grid/GridItem.js";
 import Button from "./ui/CustomButtons/Button.js";
@@ -29,8 +30,8 @@ function StartPage(props) {
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
-          height: 400,
-          color: "white"
+          height: 1,
+          color: "dark"
         }}
         // {...rest}
       />
@@ -39,17 +40,16 @@ function StartPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
-              <h2>
-              Do you want to create a Videogame but the lack of resources desincentize you? Do you need liquidity to fund gaming ideas? This is the place for you.
-              </h2>
+            <h1>Your Entrepreneurship Starts With Us</h1>
+              <h2>Helpi, the first Enterprise-lead fundrasing platform to help immigrants in Latin America. Do you want to help someone? Back his business idea and start earning rewards</h2>
               <br />
               <Button
-                color="danger"
+                color="primary"
                 size="lg"
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
                 target="_blank"
                 rel="noopener noreferrer"
+                round
               >
                 <i className="fas fa-play" />
                 Watch video

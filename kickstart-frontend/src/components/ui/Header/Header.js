@@ -65,6 +65,7 @@ export default function Header(props) {
     [classes.fixed]: fixed
   });
   const brandComponent = <Link to="/"><img width={90} src={logo} /></Link>;
+  
   return (
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
@@ -125,7 +126,7 @@ Header.propTypes = {
     "transparent",
     "white",
     "rose",
-    "dark"
+    "dark",
   ]),
   rightLinks: PropTypes.node,
   leftLinks: PropTypes.node,
