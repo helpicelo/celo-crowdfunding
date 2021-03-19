@@ -20,7 +20,7 @@ import imagesStyles from "./ui/jss/material-kit-react/imagesStyles";
 import { cardTitle } from "./ui/jss/material-kit-react.js";
 
 // Artwork Assets
-// import crowdimg1 from "../images/2730.jpg"
+import crowdimg1 from "../images/2730.jpg"
 
 const dashboardRoutes = [];
 
@@ -71,85 +71,57 @@ function StartPage(props) {
       
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-        <div className={classes.section}>
-      <GridContainer justify="center">
-        <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Let{"'"}s talk product</h2>
-          <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
-          </h5>
-        </GridItem>
-      </GridContainer>
-      <div>
-        <GridContainer>
-          <GridItem xs={12} sm={12} md={4}>
-            <h3>Test</h3>
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <h3>Test</h3>
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <h3>Test</h3>
-          </GridItem>
-        </GridContainer>
-      </div>
-    </div>
+          <div className={classes.section}>
+              <GridContainer justify="center">
+                <GridItem xs={12} sm={12} md={4}>
+                  <Card className={classes.textCenter} style={{width: "20rem"}}>
+                    <img
+                      style={{height: "200px", width: "100%", display: "block"}}
+                      className={classes.imgCardTop}
+                      src={crowdimg1}
+                      alt="Card-img-cap"
+                    />
+                    <CardBody>
+                      <h4 className={classes.cardTitle}>Card title</h4>
+                      <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <Button color="primary">Do something</Button>
+                    </CardBody>
+                  </Card>
+              </GridItem>
+              <GridItem xs={12} sm={12} md={4}>
+                <Card className={classes.textCenter} style={{width: "20rem"}}>
+                  <img
+                    style={{height: "200px", width: "100%", display: "block"}}
+                    className={classes.imgCardTop}
+                    src={crowdimg1}
+                    alt="Card-img-cap"
+                  />
+                  <CardBody>
+                    <h4 className={classes.cardTitle}>Card title</h4>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <Button color="primary">Do something</Button>
+                  </CardBody>
+                </Card>
+              </GridItem>
+              <GridItem xs={12} sm={12} md={4}>
+                <Card className={classes.textCenter} style={{width: "20rem"}}>
+                  <img
+                    style={{height: "200px", width: "100%", display: "block"}}
+                    className={classes.imgCardTop}
+                    src={crowdimg1}
+                    alt="Card-img-cap"
+                  />
+                  <CardBody>
+                    <h4 className={classes.cardTitle}>Card title</h4>
+                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <Button color="primary">Do something</Button>
+                  </CardBody>
+                </Card>
+              </GridItem>
+            </GridContainer>
+          </div>
         </div>
       </div>
-
-
-      
-          {/* <GridContainer>
-            <GridItem xs={12} sm={12} md={3}>
-              <Card className={classes.textCenter} style={{width: "20rem"}}>
-                <img
-                  style={{height: "200px", width: "100%", display: "block"}}
-                  className={classes.imgCardTop}
-                  src={crowdimg1}
-                  alt="Card-img-cap"
-                />
-                <CardBody>
-                  <h4 className={classes.cardTitle}>Card title</h4>
-                  <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <Button color="primary">Do something</Button>
-                </CardBody>
-              </Card>
-        </GridItem>
-        <GridItem xs={12} sm={12} md={3}>
-          <Card className={classes.textCenter} style={{width: "20rem"}}>
-            <img
-              style={{height: "200px", width: "100%", display: "block"}}
-              className={classes.imgCardTop}
-              src={crowdimg1}
-              alt="Card-img-cap"
-            />
-            <CardBody>
-              <h4 className={classes.cardTitle}>Card title</h4>
-              <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <Button color="primary">Do something</Button>
-            </CardBody>
-          </Card>
-        </GridItem>
-        <GridItem xs={12} sm={12} md={3}>
-          <Card className={classes.textCenter} style={{width: "20rem"}}>
-            <img
-              style={{height: "200px", width: "100%", display: "block"}}
-              className={classes.imgCardTop}
-              src={crowdimg1}
-              alt="Card-img-cap"
-            />
-            <CardBody>
-              <h4 className={classes.cardTitle}>Card title</h4>
-              <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <Button color="primary">Do something</Button>
-            </CardBody>
-          </Card>
-        </GridItem>
-      </GridContainer> */}
 
       {/* OLD VIDEO INTRO HERO */}
       {/* <div style={{ paddingTop: 20}}>
