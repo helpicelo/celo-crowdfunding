@@ -2,7 +2,7 @@ import initWeb3 from "./web3";
 import {abi} from "../build/CampaignFactory.json";
 
 
-const CONTRACT_ID = process.env.REACT_APP_CONTRACT_ID || '0xCc1Ad34F122BB9E8f1f8A40e20018311B7767641';
+const CONTRACT_ID = process.env.REACT_APP_CONTRACT_ID || '0x1015D472c72141357090D0C059aaAF0662F7D3b4';
 
 
 export default async function factory(){
