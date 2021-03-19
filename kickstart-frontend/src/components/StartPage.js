@@ -13,12 +13,22 @@ import styles from "./ui/jss/material-kit-react/views/landingPage.js";
 import GridContainer from "./ui/Grid/GridContainer.js";
 import GridItem from "./ui/Grid/GridItem.js";
 import Button from "./ui/CustomButtons/Button.js";
+import Card from "./ui/Card/Card.js";
+import CardBody from "./ui/Card/CardBody.js";
+import CardHeader from "./ui/Card/CardHeader.js"
+import imagesStyles from "./ui/jss/material-kit-react/imagesStyles";
+import { cardTitle } from "./ui/jss/material-kit-react.js";
+
+// Artwork Assets
+// import crowdimg1 from "../images/2730.jpg"
 
 const dashboardRoutes = [];
+
 const useStyles = makeStyles(styles);
 
 function StartPage(props) {
   const classes = useStyles();
+
   return (
     <div className="start-page">
 
@@ -36,7 +46,7 @@ function StartPage(props) {
         // {...rest}
       />
 
-      <Parallax>  
+      <Parallax filter image={require("../images/hero-kid-in-need.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
@@ -61,14 +71,85 @@ function StartPage(props) {
       
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          
-          <div className={"panel-text"}>
-            <p>Do you want to create a Videogame but the lack of resources desincentize you? Do you need liquidity to fund gaming ideas? This is the place for you.</p>
-            <p>In DeBactria you can create campaigns seeking funds, We are the first project in BSC to offer crowdfunding of videogames and gaming projects. DeBactria allows people to solicit funds for an idea, charity, or start-up business related with the gamer community.</p>
-          </div>
-          <Share />
+        <div className={classes.section}>
+      <GridContainer justify="center">
+        <GridItem xs={12} sm={12} md={8}>
+          <h2 className={classes.title}>Let{"'"}s talk product</h2>
+          <h5 className={classes.description}>
+            This is the paragraph where you can write more details about your
+            product. Keep you user engaged by providing meaningful information.
+            Remember that by this time, the user is curious, otherwise he wouldn
+            {"'"}t scroll to get here. Add a button if you want the user to see
+            more.
+          </h5>
+        </GridItem>
+      </GridContainer>
+      <div>
+        <GridContainer>
+          <GridItem xs={12} sm={12} md={4}>
+            <h3>Test</h3>
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <h3>Test</h3>
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <h3>Test</h3>
+          </GridItem>
+        </GridContainer>
+      </div>
+    </div>
         </div>
       </div>
+
+
+      
+          {/* <GridContainer>
+            <GridItem xs={12} sm={12} md={3}>
+              <Card className={classes.textCenter} style={{width: "20rem"}}>
+                <img
+                  style={{height: "200px", width: "100%", display: "block"}}
+                  className={classes.imgCardTop}
+                  src={crowdimg1}
+                  alt="Card-img-cap"
+                />
+                <CardBody>
+                  <h4 className={classes.cardTitle}>Card title</h4>
+                  <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <Button color="primary">Do something</Button>
+                </CardBody>
+              </Card>
+        </GridItem>
+        <GridItem xs={12} sm={12} md={3}>
+          <Card className={classes.textCenter} style={{width: "20rem"}}>
+            <img
+              style={{height: "200px", width: "100%", display: "block"}}
+              className={classes.imgCardTop}
+              src={crowdimg1}
+              alt="Card-img-cap"
+            />
+            <CardBody>
+              <h4 className={classes.cardTitle}>Card title</h4>
+              <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <Button color="primary">Do something</Button>
+            </CardBody>
+          </Card>
+        </GridItem>
+        <GridItem xs={12} sm={12} md={3}>
+          <Card className={classes.textCenter} style={{width: "20rem"}}>
+            <img
+              style={{height: "200px", width: "100%", display: "block"}}
+              className={classes.imgCardTop}
+              src={crowdimg1}
+              alt="Card-img-cap"
+            />
+            <CardBody>
+              <h4 className={classes.cardTitle}>Card title</h4>
+              <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <Button color="primary">Do something</Button>
+            </CardBody>
+          </Card>
+        </GridItem>
+      </GridContainer> */}
 
       {/* OLD VIDEO INTRO HERO */}
       {/* <div style={{ paddingTop: 20}}>
@@ -81,8 +162,6 @@ function StartPage(props) {
           />
         </div>
       </div> */}
-
-      
     </div>
 
   );
