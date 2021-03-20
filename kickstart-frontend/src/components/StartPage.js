@@ -18,6 +18,7 @@ import CardBody from "./ui/Card/CardBody.js";
 import CardHeader from "./ui/Card/CardHeader.js"
 import imagesStyles from "./ui/jss/material-kit-react/imagesStyles";
 import { cardTitle } from "./ui/jss/material-kit-react.js";
+import Clearfix from "./ui/Clearfix/Clearfix.js";
 
 // Artwork Assets
 import crowdimg1 from "../images/2730.jpg"
@@ -78,26 +79,28 @@ function StartPage(props) {
                 <GridItem xs={12} sm={12} md={4}>
                   <Card className={classes.textCenter} style={{marginTop: "0px"}}>
                   <CardHeader className={classes.cardHeader}>
+                      <Clearfix></Clearfix>
                       <GridContainer>
-                        <GridItem xs={4} md={4}>
+                        <GridItem xs={4} md={4} style={{backgroundColor: "#9c27b0", padding: "0.em"}}>
                           <div>
                             <h4>Goal</h4>
                             <h5>$1,000,000.00</h5>
                           </div>
                         </GridItem>
-                        <GridItem xs={4} md={4}>
+                        <GridItem xs={4} md={4} style={{backgroundColor: "#9c27b0", padding: "0.em"}}>
                         <div>
                             <h4>Goal</h4>
                             <h5>$1,000,000.00</h5>
                         </div>
                         </GridItem>
-                        <GridItem xs={4} md={4}>
+                        <GridItem xs={4} md={4} style={{backgroundColor: "#9c27b0", padding: "0.em"}}>
                         <div>
                             <h4>Goal</h4>
                             <h5>$1,000,000.00</h5>
                         </div>
                         </GridItem>
                       </GridContainer>
+                      
                   </CardHeader>
                     <img
                       className={classes.imgCardTop}
@@ -112,28 +115,30 @@ function StartPage(props) {
                   </Card>
               </GridItem>
               <GridItem xs={12} sm={12} md={4}>
-                <Card className={classes.textCenter}>
+                <Card className={classes.textCenter} style={{marginTop: "0px"}}>
                 <CardHeader className={classes.cardHeader}>
+                      <Clearfix>
                       <GridContainer>
-                        <GridItem xs={4} md={4}>
+                        <GridItem xs={4} md={4} style={{backgroundColor: "#9c27b0", padding: "0.em"}}>
                           <div>
                             <h4>Goal</h4>
                             <h5>$1,000,000.00</h5>
                           </div>
                         </GridItem>
-                        <GridItem xs={4} md={4}>
+                        <GridItem xs={4} md={4} style={{backgroundColor: "#9c27b0", padding: "0.em"}}>
                         <div>
                             <h4>Goal</h4>
                             <h5>$1,000,000.00</h5>
                         </div>
                         </GridItem>
-                        <GridItem xs={4} md={4}>
+                        <GridItem xs={4} md={4} style={{backgroundColor: "#9c27b0", padding: "0.em"}}>
                         <div>
                             <h4>Goal</h4>
                             <h5>$1,000,000.00</h5>
                         </div>
                         </GridItem>
                       </GridContainer>
+                      </Clearfix> 
                   </CardHeader>
                   <img
                     className={classNames(classes.imgCardTop, imgClasses)}
@@ -148,28 +153,30 @@ function StartPage(props) {
                 </Card>
               </GridItem>
               <GridItem xs={12} sm={12} md={4}>
-                <Card className={classes.textCenter}>
+                <Card className={classes.textCenter} style={{marginTop: "0px"}}>
                 <CardHeader className={classes.cardHeader}>
+                <Clearfix>
                       <GridContainer>
-                        <GridItem xs={4} md={4}>
+                        <GridItem xs={4} md={4} style={{backgroundColor: "#9c27b0", padding: "0.em"}}>
                           <div>
                             <h4>Goal</h4>
                             <h5>$1,000,000.00</h5>
                           </div>
                         </GridItem>
-                        <GridItem xs={4} md={4}>
+                        <GridItem xs={4} md={4} style={{backgroundColor: "#9c27b0", padding: "0.em"}}>
                         <div>
                             <h4>Goal</h4>
                             <h5>$1,000,000.00</h5>
                         </div>
                         </GridItem>
-                        <GridItem xs={4} md={4}>
+                        <GridItem xs={4} md={4} style={{backgroundColor: "#9c27b0", padding: "0.em"}}>
                         <div>
                             <h4>Goal</h4>
                             <h5>$1,000,000.00</h5>
                         </div>
                         </GridItem>
                       </GridContainer>
+                      </Clearfix> 
                   </CardHeader>
                   <img
                     className={classes.imgCardTop}
