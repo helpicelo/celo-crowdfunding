@@ -41,35 +41,48 @@ class NewCampaign extends Component{
         const minContribution = this.state.value;
         const title = this.state.title;
 
-        if(minContribution.length>0 && title.length>5){
+        if(minContribution.length>0 && title.length>5)
+        
+        {
             const factoryInstance = await factory();
             this.setState({
                 handlingTransaction: true
-            });
+            })
+
             const thash = await factoryInstance.methods.createCampaign(minContribution, title).send({
-                from: this.props.account,
-            });
-            await this.props.dispatch(deployedCampaigns());
+                from: this.props.account
+            })
+
+            await this.props.dispatch(deployedCampaigns()).
+
             this.props.history.push("/");
-            // }
-            // catch(e){
-            //     this.setState({
-            //         errorMessage: e.message,
-            //         errorVisible: true
-            //     });
-            //     setTimeout( () => {
-            //         this.setState({
-            //             errorMessage: "",
-            //             errorVisible: false
-            //         });
-            //     },3000);
-            // }
-            // finally{
+
             this.setState({
                 handlingTransaction: false
             });
-            // }
-        } else{
+
+        }
+
+        // catch(e){
+        //         this.setState({
+        //             errorMessage: e.message,
+        //             errorVisible: true
+        //         });
+        //         setTimeout( () => {
+        //             this.setState({
+        //                 errorMessage: "",
+        //                 errorVisible: false
+        //             });
+        //         },3000);
+        //     }
+        //     finally{
+        //     this.setState({
+        //         handlingTransaction: false
+        //     });
+        // }
+        // }
+
+        else {
           if (title.length<5){
             this.setState({
                 errorMessage: "Title field cannot be empty or less 5 caracter",

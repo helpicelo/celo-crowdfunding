@@ -24,6 +24,7 @@ class StartPage extends Component {
           }}
           // {...rest}
         />
+        
         <div style={{ paddingTop: 20}}>
           <div className='player-wrapper' style={{ margin: '0 auto'}}>
             {/* <ReactPlayer

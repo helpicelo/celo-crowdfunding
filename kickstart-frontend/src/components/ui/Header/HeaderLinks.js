@@ -17,11 +17,9 @@ import { Apps, CloudDownload } from "@material-ui/icons";
 // core components
 import CustomDropdown from "../CustomDropdown/CustomDropdown.js";
 import Button from "../CustomButtons/Button.js";
-
 import styles from "../jss/material-kit-react/components/headerLinksStyle";
-
-import {connect} from "react-redux";
 import ConnectLink from '../../ConnectLink';
+import {connect} from "react-redux";
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
@@ -33,36 +31,33 @@ function HeaderLinks(props) {
       {(props.account !== 0 && props.account !== undefined) &&
       <ListItem className={classes.listItem}>
         <Button
-          href="/campaigns/new"
           color="transparent"
           className={classes.navLink}
         >
-          Create Campaign
+          <Link to="/campaigns/new">Create Campaign</Link>
         </Button>
       </ListItem>}
 
       <ListItem className={classes.listItem}>
         <Button
-          href="/opens"
           color="transparent"
           className={classes.navLink}
         >
-          Explore
+          <Link to="/opens">Explore</Link>
         </Button>
       </ListItem>
 
       <ListItem className={classes.listItem}>
         <Button
-          href="/about/us"
           color="transparent"
           className={classes.navLink}
         >
-          About us
+          <Link to="/about/us">About us</Link>
         </Button>
       </ListItem>
 
       <ListItem className={classes.listItem}>
-        <Button color="primary" round><ConnectLink /></Button>
+        <Button color="primary" round><ConnectLink/></Button>
       </ListItem>
     </List>
   );

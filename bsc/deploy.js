@@ -3,7 +3,6 @@ const HDWalletProvider = require('truffle-hdwallet-provider');
 const factory = require("../kickstart-frontend/src/build/CampaignFactory.json");
 const config = require('./config.js');
 
-
 const privateKey = [config.PRIVATE_KEY];
 const provider = new HDWalletProvider(
   privateKey,
