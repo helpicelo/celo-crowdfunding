@@ -21,13 +21,16 @@ import { cardTitle } from "./ui/jss/material-kit-react.js";
 
 // Artwork Assets
 import crowdimg1 from "../images/2730.jpg"
+import { Grid } from '@material-ui/core';
 
 const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
+const useImgStyles = makeStyles(imagesStyles)
 
 function StartPage(props) {
   const classes = useStyles();
+  const imgClasses = useImgStyles()
 
   return (
     <div className="start-page">
@@ -70,13 +73,33 @@ function StartPage(props) {
       </Parallax>
       
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <div className={classes.container}>
           <div className={classes.section}>
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={4}>
-                  <Card className={classes.textCenter} style={{width: "20rem"}}>
+                  <Card className={classes.textCenter} style={{marginTop: "0px"}}>
+                  <CardHeader className={classes.cardHeader}>
+                      <GridContainer>
+                        <GridItem xs={4} md={4}>
+                          <div>
+                            <h4>Goal</h4>
+                            <h5>$1,000,000.00</h5>
+                          </div>
+                        </GridItem>
+                        <GridItem xs={4} md={4}>
+                        <div>
+                            <h4>Goal</h4>
+                            <h5>$1,000,000.00</h5>
+                        </div>
+                        </GridItem>
+                        <GridItem xs={4} md={4}>
+                        <div>
+                            <h4>Goal</h4>
+                            <h5>$1,000,000.00</h5>
+                        </div>
+                        </GridItem>
+                      </GridContainer>
+                  </CardHeader>
                     <img
-                      style={{height: "200px", width: "100%", display: "block"}}
                       className={classes.imgCardTop}
                       src={crowdimg1}
                       alt="Card-img-cap"
@@ -89,10 +112,31 @@ function StartPage(props) {
                   </Card>
               </GridItem>
               <GridItem xs={12} sm={12} md={4}>
-                <Card className={classes.textCenter} style={{width: "20rem"}}>
+                <Card className={classes.textCenter}>
+                <CardHeader className={classes.cardHeader}>
+                      <GridContainer>
+                        <GridItem xs={4} md={4}>
+                          <div>
+                            <h4>Goal</h4>
+                            <h5>$1,000,000.00</h5>
+                          </div>
+                        </GridItem>
+                        <GridItem xs={4} md={4}>
+                        <div>
+                            <h4>Goal</h4>
+                            <h5>$1,000,000.00</h5>
+                        </div>
+                        </GridItem>
+                        <GridItem xs={4} md={4}>
+                        <div>
+                            <h4>Goal</h4>
+                            <h5>$1,000,000.00</h5>
+                        </div>
+                        </GridItem>
+                      </GridContainer>
+                  </CardHeader>
                   <img
-                    style={{height: "200px", width: "100%", display: "block"}}
-                    className={classes.imgCardTop}
+                    className={classNames(classes.imgCardTop, imgClasses)}
                     src={crowdimg1}
                     alt="Card-img-cap"
                   />
@@ -104,9 +148,30 @@ function StartPage(props) {
                 </Card>
               </GridItem>
               <GridItem xs={12} sm={12} md={4}>
-                <Card className={classes.textCenter} style={{width: "20rem"}}>
+                <Card className={classes.textCenter}>
+                <CardHeader className={classes.cardHeader}>
+                      <GridContainer>
+                        <GridItem xs={4} md={4}>
+                          <div>
+                            <h4>Goal</h4>
+                            <h5>$1,000,000.00</h5>
+                          </div>
+                        </GridItem>
+                        <GridItem xs={4} md={4}>
+                        <div>
+                            <h4>Goal</h4>
+                            <h5>$1,000,000.00</h5>
+                        </div>
+                        </GridItem>
+                        <GridItem xs={4} md={4}>
+                        <div>
+                            <h4>Goal</h4>
+                            <h5>$1,000,000.00</h5>
+                        </div>
+                        </GridItem>
+                      </GridContainer>
+                  </CardHeader>
                   <img
-                    style={{height: "200px", width: "100%", display: "block"}}
                     className={classes.imgCardTop}
                     src={crowdimg1}
                     alt="Card-img-cap"
@@ -120,7 +185,6 @@ function StartPage(props) {
               </GridItem>
             </GridContainer>
           </div>
-        </div>
       </div>
 
       {/* OLD VIDEO INTRO HERO */}

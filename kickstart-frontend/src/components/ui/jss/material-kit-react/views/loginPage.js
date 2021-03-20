@@ -1,10 +1,10 @@
-import { container } from "assets/jss/material-kit-react.js";
+import { container } from "../../material-kit-react.js";
 
 const signupPageStyle = {
   container: {
     ...container,
     zIndex: "2",
-    position: "relative",
+    // position: "relative",
     paddingTop: "20vh",
     color: "#FFFFFF",
     paddingBottom: "200px"
@@ -68,7 +68,7 @@ const signupPageStyle = {
     fontSize: "20px"
   },
   divider: {
-    marginTop: "30px",
+    marginTop: "0px",
     marginBottom: "0px",
     textAlign: "center"
   },
